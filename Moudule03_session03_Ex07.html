@@ -6,64 +6,67 @@
     <title> BÀI 7</title>
 </head>
 <body>
-    <header>
-        <h1 style="color:antiquewhite ;background-color: red; text-align: center; ">
-            SỞ THÍCH CỦA BẠN </h1>
-    </header>
+    <form>
     <main>
         <section>
             <table style="color: blue;">
                 <tr>
-                    <td ><label for="name">Họ và Tên:</label></td>
-                    <td><input type="text" placeholder="Nguyen Van A"></td>
+                    <td><label for="name">Họ và Tên:</label></td>
+                    <td><input type="text" id="name" placeholder="Nguyen Van A"></td>
                 </tr>
+
                 <tr>
                     <td style="text-align: right;"><label for="email">Email:</label></td>
-                    <td><input type="email" placeholder="@ABCD.com"></label></td>
+                    <td><input type="email" id="email" placeholder="@ABCD.com"></td>
                 </tr>
+
                 <tr>
-                    <td style="text-align: right;">Sở thích:</td>
+                    <td style="text-align: right; vertical-align: top;">Sở thích:</td>
+
+                    <!-- Cột 1 -->
                     <td>
-                        <input type="checkbox" name="" id="sport">
+                        <input type="checkbox" id="sport">
                         <label for="sport">Thể thao</label><br>
 
-                        <input type="checkbox" name="" id="web">
+                        <input type="checkbox" id="web">
                         <label for="web">Lướt web</label><br>
 
-                        <input type="checkbox" name="" id="travel">
+                        <input type="checkbox" id="travel">
                         <label for="travel">Du lịch</label>
                     </td>
-                    <td>
-                        <input type="checkbox" name="" id="music">
-                        <label for="muisc">Âm nhạc</label><br>
 
-                        <input type="checkbox" name="" id="game">
+                    <!-- Cột 2 -->
+                    <td>
+                        <input type="checkbox" id="music">
+                        <label for="music">Âm nhạc</label><br>
+
+                        <input type="checkbox" id="game">
                         <label for="game">Chơi Game</label><br>
-
                     </td>
+
+                    
                     <td>
-                        <input type="checkbox" name="" id="book">
+                        <input type="checkbox" id="book">
                         <label for="book">Đọc sách</label><br>
-                
-                        <input type="checkbox" name="" id="movie">
+
+                        <input type="checkbox" id="movie">
                         <label for="movie">Điện ảnh</label><br>
                     </td>
                 </tr>
 
+                
+                <footer>
+                    <tr>
+                        <td colspan="4" style="text-align: center; padding-top: 10px;">
+                        <button type="submit">Gửi thông tin</button>
+                        <button type="reset" style="margin-left: 10px;">Nhập lại</button>
+                        </td>
+                    </tr>
+                </footer>
+
             </table>
         </section>
     </main>
-    <footer>
-        <tr>
-    <td></td>
-    <td style="text-align: center;">
-        <input type="submit" value="Gửi thông tin"
-               style="background-color: orange; color: white; padding: 5px 10px; border: none;">
-
-        <input type="reset" value="Nhập lại"
-               style="background-color: gray; color: white; padding: 5px 10px; border: none; margin-left: 10px;">
-    </td>
-        </tr>
-    </footer>
+</form>
 </body>
 </html>
